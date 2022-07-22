@@ -40,6 +40,16 @@
                     <a class="nav-link" href="#">Contactanos</a>
                   </li>
                 </ul>
+
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active aria-current="page" href="#">
+                      <i class="bi bi-cart3 fs-3"></i>
+                      <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
+                        99+
+                      </span>
+                    </a>
+                  </li>
               </div>
             </div>
         </nav>
@@ -51,11 +61,12 @@
             <div class="container my-5">
                 <div class="row justfy-content-center">
                     <div class="col-12 col-md-5">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/Bugatti_Chiron-%202.webp?alt=media&token=0f66aba4-734c-4246-ac21-e46cf726ac45','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/Bugatti_Chiron-%201.jpg?alt=media&token=aa7090c6-df44-4c45-a934-0958fdb86122" alt="" class="img-fluid w-100">
+                        <img src="" alt="" class="img-fluid w-100" id="foto">
                     </div>
                     <div class="col-12 col-md-6 border-start">
-                        <h3>Bugatti Chiron</h3>
-                        <h2 class="fw-bold">$4300000 €</h2>
+                        <h3 id="nombre"></h3>
+                        <h2 class="fw-bold" id="precio"></h2>
+                        <p id="descripcion"></p>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -77,10 +88,10 @@
 
                       <div class="mb-3 mt-4">
                         <label class="form-label">Cantidad </label>
-                        <input type="number" placeholder="0" id="cantidad">
+                        <input type="number" placeholder="0" id="cantidad" value="1">
                       </div>
 
-                      <button type="button" class="btn btn-primary">Añadir al Carrito</button>
+                      <button type="button" class="btn btn-primary" id="botonAgregar">Añadir al Carrito</button>
 
                     </div>
                 </div>

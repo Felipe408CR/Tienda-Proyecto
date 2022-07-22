@@ -1,3 +1,5 @@
+// Popularidad = 1 hasta 5
+
 export let productosBD=[
 
     {
