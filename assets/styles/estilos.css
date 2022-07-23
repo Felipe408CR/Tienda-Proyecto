@@ -11,12 +11,18 @@
 .menu{
     position: sticky;
     top:0;
+    z-index: 1;
 }
 
 .galeria{
-    background-image: url(https://img.freepik.com/foto-gratis/marron-beige-crema-claro-lujo-abstracto-como-fondo-modelo-textura-seda-algodon_1258-71591.jpg?w=360);
+    background-image: url(https://aelis.es/wp-content/uploads/2021/03/depositphotos_24960671-stock-photo-dark-blue-background.jpg);
     background-repeat: no-repeat;
     height: 1800px;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; 
+}
+
+.logo{
+    height: 40px;
+    width: 100px;
 }

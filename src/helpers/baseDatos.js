@@ -122,15 +122,46 @@ export let productosBD=[
         descripcion:'Super Deportivo de Lamborghini',
     },
     
-    /*
+    
     {
-        nombre:'',
-        precio:,
+        nombre:'McLaren P1',
+        precio:3061900,
         cantidad:0,
-        fotos:[],
-        descripcion:'',
-    }, */
+        fotos:['https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20p1-1.jpg?alt=media&token=113df1bd-7bce-4109-aae2-8385c747a1a4','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20p1-2.jpg?alt=media&token=8a1db6e9-4654-4483-99b3-ac40d0b044f7'],
+        descripcion:'Super Deportivo de McLaren',
+    }, 
 
+    {
+        nombre:'McLaren 720S',
+        precio:284700,
+        cantidad:0,
+        fotos:['https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20720s-1.webp?alt=media&token=26f4e160-440e-4b34-a257-30b919c95be9','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20720s-2.webp?alt=media&token=296d9d3c-f214-407a-a57e-1a920ad6e7f7'],
+        descripcion:'Super Deportivo de McLaren',
+    }, 
+
+    {
+        nombre:'McLaren Senna',
+        precio:900000,
+        cantidad:0,
+        fotos:['https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20senna-1.jpg?alt=media&token=e8df56cc-d9ac-4e00-aa2a-5cd6d58e055f','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20senna-2.jpg?alt=media&token=f8152176-8b64-4d45-b321-ffcee1d837f7'],
+        descripcion:'Super Deportivo de McLaren',
+    }, 
+
+    {
+        nombre:'McLaren Artura',
+        precio:210000,
+        cantidad:0,
+        fotos:['https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20artura-1.webp?alt=media&token=aa38e9e8-ebe6-4734-81e4-ec0576e8ccc8','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20artura-2.jpg?alt=media&token=a306705e-6179-4249-959f-a101492d7ff9'],
+        descripcion:'Super Deportivo de McLaren',
+    }, 
+
+    {
+        nombre:'McLaren 765LT',
+        precio:500000,
+        cantidad:0,
+        fotos:['https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20765lt-1.jpg?alt=media&token=97115de4-f824-4ecf-bd22-bb266bd0f228','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/mclaren%20765lt-2.jpg?alt=media&token=8245d729-5ec5-475b-b07d-34ac1dd21666'],
+        descripcion:'Super Deportivo de McLaren',
+    }
 
 ]
 
