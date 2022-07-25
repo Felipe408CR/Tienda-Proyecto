@@ -43,6 +43,16 @@ let cantidad=document.getElementById("cantidad").value
 let botonAgregar=document.getElementById("botonAgregar")
 
 botonAgregar.addEventListener("click",function(evento){
+    
+    // Se agrega la alerta
+
+    let alerta=document.getElementById("alerta")
+    alerta.classList.remove("invisible")
+
+    setTimeout(function(){
+        alerta.classList.add("invisible")
+    },3000)
+
     let cantidad=document.getElementById("cantidad").value
     producto.cantidad=cantidad
     
