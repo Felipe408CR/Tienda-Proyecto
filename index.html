@@ -43,10 +43,10 @@
 
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active aria-current="page" href="./resumenCompra.html">
+                    <a class="nav-link active aria-current="page" href="./src/views/resumenCompra.html">
                       <i class="bi bi-cart3 fs-3"></i>
-                      <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">
-                        99+
+                      <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger" id="contadorCarrito">
+                       
                       </span>
                     </a>
                   </li>
@@ -81,28 +81,29 @@
                           Registrate
                         </button>
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                            <div class="offcanvasheader text-dark">
+                            <div class="offcanvasheader text-dark mt-5">
                               <h5 class="offcanvas-title">
                                 Registro
                               </h5>
                             </div>
                             <div class="offcanvas-body">
-                              <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label text-dark">Ingrese su Email</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                  <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                              <form class="border">      
+                                <div class="input-group mb-3 mt-3">
+                                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+                                  <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" id="email">
                                 </div>
-                                <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label text-dark">Contraseña</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1">
+
+                                <div class="input-group">
+                                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                                  <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="password">
                                 </div>
-                                <div class="mb-3 form-check">
+                                <div class="mb-3 form-check mt-3">
                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                   <label class="form-check-label text-dark" for="exampleCheck1">Estoy de Acuerdo con la Politica de Privacidad</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="submit" class="btn btn-primary align-self-center mt-3 mb-3" id="botonRegistro"> <i class="bi bi-send"></i> Registrar</button> 
                               </form>
+
                             </div>
                         </div>
                   </div>
@@ -186,5 +187,7 @@
     
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./src/helpers/conexionFireBase.js" type="module"></script>
+    <script src="./src/controllers/controladorRegistro.js" type="module"></script>
 </body>
 </html>

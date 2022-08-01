@@ -56,5 +56,5 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     fila.appendChild(columna2)
     
     contenedor.appendChild(fila)
-
+    
 }

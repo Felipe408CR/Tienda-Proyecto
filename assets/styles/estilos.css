@@ -17,8 +17,7 @@
 .galeria{
     background-image: url(https://aelis.es/wp-content/uploads/2021/03/depositphotos_24960671-stock-photo-dark-blue-background.jpg);
     background-repeat: no-repeat;
-    height: 1800px;
-    background-attachment: fixed;
+    height: 100%;
     background-size: cover; 
 }
 
@@ -30,3 +29,4 @@
 .carrito{
     height: 450px;
 }
+

@@ -65,8 +65,16 @@ botonAgregar.addEventListener("click",function(evento){
 
     localStorage.setItem("carrito",JSON.stringify(carrito))
 
-  
+    // Recorriendo un arreglo
+
+    let suma=0
+
+    carrito.forEach(function(producto){
+        console.log(producto.cantidad)
+        suma=suma+Number(producto.cantidad)
+    }) 
+    
+    console.log(suma)
 
 })
-
 
