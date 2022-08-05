@@ -1,5 +1,5 @@
 console.log("hola estamos comprando")
-console.log( JSON.parse(localStorage.getItem('infoProducto')))
+console.log("este"+ JSON.parse(localStorage.getItem('infoProducto')))
 let producto=JSON.parse(localStorage.getItem('infoProducto'))
 
 let carrito
@@ -41,6 +41,18 @@ let cantidad=document.getElementById("cantidad").value
 // Agrego un nuevo atributo (Cantidad) al objeto producto
 
 let botonAgregar=document.getElementById("botonAgregar")
+let suma=0
+
+if(localStorage.getItem("cantidad")!=null){
+    suma=localStorage.getItem("cantidad")
+    console.log("null")
+}else{
+    suma=0
+}
+
+let bolitaCantidad=document.getElementById("contadorCarrito")
+bolitaCantidad.textContent=suma
+
 
 botonAgregar.addEventListener("click",function(evento){
     
@@ -66,15 +78,13 @@ botonAgregar.addEventListener("click",function(evento){
     localStorage.setItem("carrito",JSON.stringify(carrito))
 
     // Recorriendo un arreglo
-
-    let suma=0
-
-    carrito.forEach(function(producto){
-        console.log(producto.cantidad)
-        suma=suma+Number(producto.cantidad)
-    }) 
+    suma=Number(suma)+Number(producto.cantidad)
     
     console.log(suma)
-
+    
+    bolitaCantidad.textContent=suma
+    
+    localStorage.setItem("cantidad",suma)
+    
 })
 

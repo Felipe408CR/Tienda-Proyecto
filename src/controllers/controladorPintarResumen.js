@@ -13,7 +13,7 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     columna1.classList.add("col-12","col-md-4","border-end","mt-3","my-3")
 
     let columna2=document.createElement("div")
-    columna2.classList.add("col-12","col-md-6","align-self-center")
+    columna2.classList.add("col-12","col-md-6","align-self-center","text-center")
 
     let foto=document.createElement("img")
     foto.classList.add("img-fluid","w-100")
@@ -58,3 +58,15 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     contenedor.appendChild(fila)
     
 }
+
+let suma=0
+
+if(localStorage.getItem("cantidad")!=null){
+    suma=localStorage.getItem("cantidad")
+    console.log("null")
+}else{
+    suma=0
+}
+
+let bolitaCantidad=document.getElementById("contadorCarrito")
+bolitaCantidad.textContent=suma

@@ -20,7 +20,10 @@ if(carrito==null){
     carrito.forEach(function(producto){
 
         pintarResumenCompra(producto.foto,producto.nombre,false,true,producto.precio,true,producto.cantidad)
+        console.log(producto.cantidad)
+        console.log(producto.precio)
 
+        console.log(producto.precio.split("€")[1])
     })
 
 }
@@ -30,9 +33,11 @@ if(carrito==null){
 let botonLimpiar=document.getElementById("botonLimpiar")
 botonLimpiar.addEventListener("click",function(evento){
     localStorage.removeItem("carrito")
+    localStorage.removeItem("cantidad")
 
     let contenedor=document.getElementById("contenedor")
     contenedor.innerHTML=""
 
     pintarResumenCompra('../../assets/img/carrito.jpg','Carrito Vacio',true,false,null,false,null)
 })
+
