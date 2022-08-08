@@ -10,7 +10,6 @@ pintarProductos(productosBD)
 // Llamamos al metodo encargado de buscar productos por texto coincidente
 
 import {buscarProductos} from './controladorBuscar.js';
-
 buscarProductos()
 
 // Escuchamos clic en el contenedor padre de la tienda

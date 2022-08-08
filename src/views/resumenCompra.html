@@ -65,18 +65,51 @@
         
       </div>
       
+      
+
       <div class="container mb-5">
         <div class="row justify-content-center">
           <div class="col-12 col-md-3 text-center">
 
-            <button type="button" class="btn btn-primary" id="botonLimpiar">
-              <i class="bi bi-trash3"></i>
-              Limpiar
-            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+              <div class="offcanvasheader text-dark mt-5">
+                <h5 class="offcanvas-title">
+                  Consultar Compra
+                </h5>
+              </div>
+              <div class="offcanvas-body">
+                <form>      
+                  <h5>Subtotal</h5>
 
+                  <h5>Total</h5>
+
+                  <h5>Cambio de Moneda</h5>
+                </form>
+
+              </div>
+          </div>
+
+          <div class="padre">
+            <div class="mx-3 ">
+              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                <i class="bi bi-currency-dollar"></i> 
+                Consultar Pedido
+              </button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-primary" id="botonLimpiar">
+                <i class="bi bi-trash3"></i>
+                Limpiar
+            </button>  
+            </div>
+ 
+          </div>  
+          
           </div>
         </div>
       </div>
+
+      
     </main>
 
     

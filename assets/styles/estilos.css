@@ -29,4 +29,6 @@
 .carrito{
     height: 450px;
 }
-
+.padre{
+    display: flex;
+}

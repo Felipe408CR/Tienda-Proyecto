@@ -33,6 +33,21 @@ precio.textContent=producto.precio
 let descripcion=document.getElementById("descripcion")
 descripcion.textContent=producto.descripcion
 
+let estrellas=document.getElementById("estrella")
+estrellas.textContent=producto.popularidad
+
+
+let baseEstrellas=document.getElementById("contenedorEstrellas")
+for(let i=1; i<=Number(producto.popularidad);i++){
+    
+    let estrella=document.createElement("i")
+    estrella.classList.add("bi","bi-star-fill")
+
+    baseEstrellas.appendChild(estrella)
+}
+
+
+
 // Capturar la cantidad del producto seleccionado
 // Capturamos el value del input
 
@@ -87,4 +102,5 @@ botonAgregar.addEventListener("click",function(evento){
     localStorage.setItem("cantidad",suma)
     
 })
+console.log(producto)
 

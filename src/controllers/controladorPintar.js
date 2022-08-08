@@ -44,6 +44,12 @@ export function pintarProductos(productos){
         descripcion.classList.add("d-none")
         descripcion.textContent = producto.descripcion
 
+        // 2.6 Creamos la descripcion 
+
+        let popularidad = document.createElement("h4")
+        popularidad.classList.add("d-none")
+        popularidad.textContent = producto.popularidad
+
         // Deteccion de mouse
 
         columna.addEventListener("mouseover",function(evento){
@@ -60,6 +66,7 @@ export function pintarProductos(productos){
         tarjeta.appendChild(nombre)
         tarjeta.appendChild(precio)
         tarjeta.appendChild(descripcion)
+        tarjeta.appendChild(popularidad)
         columna.appendChild(tarjeta)
 
         fila.appendChild(columna)
