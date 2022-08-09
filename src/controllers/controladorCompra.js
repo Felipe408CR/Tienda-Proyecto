@@ -34,7 +34,7 @@ let descripcion=document.getElementById("descripcion")
 descripcion.textContent=producto.descripcion
 
 let estrellas=document.getElementById("estrella")
-estrellas.textContent=producto.popularidad
+//estrellas.textContent=producto.popularidad
 
 
 let baseEstrellas=document.getElementById("contenedorEstrellas")
