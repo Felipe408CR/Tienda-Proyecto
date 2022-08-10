@@ -41,7 +41,7 @@ let baseEstrellas=document.getElementById("contenedorEstrellas")
 for(let i=1; i<=Number(producto.popularidad);i++){
     
     let estrella=document.createElement("i")
-    estrella.classList.add("bi","bi-star-fill")
+    estrella.classList.add("bi","bi-star-fill",'estrella')
 
     baseEstrellas.appendChild(estrella)
 }

@@ -29,6 +29,8 @@
 .carrito{
     height: 450px;
 }
-.padre{
-    display: flex;
+
+.estrella{
+    color: rgb(255, 238, 7);
 }
+
