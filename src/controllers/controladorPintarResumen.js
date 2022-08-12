@@ -1,4 +1,4 @@
-export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,precioProducto,banderaCantidad,cantidadProducto){
+export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,precioProducto,banderaCantidad,cantidadProducto,BanderasubTotal){
 
     let contenedor=document.getElementById("contenedor")
 
@@ -19,7 +19,7 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     foto.classList.add("img-fluid","w-100")
     foto.src=fotoURL
     
-    let nombre=document.createElement("h3")
+    let nombre=document.createElement("h2")
     nombre.classList.add("fw-boldr")
     nombre.textContent=nombreMensaje
 
@@ -31,15 +31,18 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     let precio=document.createElement("h3")
     precio.classList.add("fw-bold")
     precio.textContent="Precio Und: " + precioProducto
-    
+    console.log(precioProducto.split('$')[1])
     let cantidad=document.createElement("h3")
     cantidad.textContent= "Cantidad: " + cantidadProducto
-
+    
+    let subtotal =document.createElement('h2')
+    subtotal.classList.add("fw-bold")
+    subtotal.textContent= 'SubTotal: ' + Number(precioProducto.split('€')[0])*cantidadProducto + '€'
+    
      // Padres e hijos
 
     columna1.appendChild(foto)
     columna2.appendChild(nombre)
-
     if(banderaBoton==true){
         columna2.appendChild(boton) 
     }
@@ -51,6 +54,9 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     if(banderaCantidad==true){
         columna2.appendChild(cantidad)
     }
+
+    if(BanderasubTotal=!NaN)
+    columna2.appendChild(subtotal)
 
     fila.appendChild(columna1)
     fila.appendChild(columna2)

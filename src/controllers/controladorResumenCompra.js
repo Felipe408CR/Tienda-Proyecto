@@ -17,14 +17,24 @@ if(carrito==null){
 
     // Recorro el carrito de compras 
 
+    let total=0
     carrito.forEach(function(producto){
 
-        pintarResumenCompra(producto.foto,producto.nombre,false,true,producto.precio,true,producto.cantidad)
-        console.log(producto.cantidad)
-        console.log(producto.precio)
+        let subtotal=Number(producto.precio.split("€")[0])*Number(producto.cantidad)
+        
+        total=total+subtotal
+        
+        
 
-        console.log(producto.precio.split("€")[1])
+        pintarResumenCompra(producto.foto,producto.nombre,false,true,producto.precio,true,producto.cantidad)
+    
+   
+
+
+
     })
+    let totaletiqueta=document.getElementById("total")
+    totaletiqueta.textContent= 'El total de la compra: ' + total + '€'
 
 }
 
@@ -41,3 +51,8 @@ botonLimpiar.addEventListener("click",function(evento){
     pintarResumenCompra('../../assets/img/carrito.jpg','Carrito Vacio',true,false,null,false,null)
 })
 
+let cambioMoneda=document.getElementById("cambioMoneda")
+cambioMoneda.addEventListener('click',function(evento){
+    let cmabio=document.getElementById("cmabio")
+    
+})
