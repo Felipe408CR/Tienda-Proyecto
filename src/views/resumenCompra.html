@@ -19,7 +19,7 @@
     
     <link rel="stylesheet" href="../../assets/styles/estilos.css">
 </head>
-<body class="fuente">
+<body class="fuente galeria">
     
     <header class="animate__animated animate__backInLeft, menu">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -33,11 +33,11 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../../nuestrosautos.html">Nuestros Autos</a>
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="../../nuestrosautos.html">Nuestros Autos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contactanos</a>
+                    <a class="nav-link active" href="#">Contactanos</a>
                   </li>
                 </ul>
 
@@ -57,14 +57,30 @@
     </header>
 
 
+    
+
     <main>
 
-      <h1 class="text-center fw-bold mt-5">Mi Carrito</h1>
-
-      <div class="container my-5" id="contenedor">
-        
+      <div class="carroResumen">
+        <div class="bandera" id="bandera">  
+          <h1 class="texto">Mi Carrito</h1>
+        </div>
       </div>
-      
+       
+    <h1 class="text-center mt-5 text-white">Lista de Productos</h1>
+    <section>
+      <div class="card2 container mt-5" style="max-width: 90%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+           
+          </div>
+         
+        <div class="container my-5" id="contenedor">
+          
+        </div>
+        </div>
+      </div>
+    </section>  
       
 
       <div class="container mb-5">
@@ -163,5 +179,6 @@
      <!-- JavaScript Bundle with Popper -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
      <script src="../controllers/controladorResumenCompra.js" type="module"></script>
+     <script src="../controllers/bandera.js"></script>
 </body>
 </html>
