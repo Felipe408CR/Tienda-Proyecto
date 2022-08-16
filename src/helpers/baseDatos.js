@@ -35,7 +35,7 @@ export let productosBD=[
         cantidad:0,
         fotos:['https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/bugatti%20divo%201.jpg?alt=media&token=74f48417-8869-4a4c-8e71-a504b453fb8b','https://firebasestorage.googleapis.com/v0/b/felipe408crtiendatcc.appspot.com/o/bugatti%20divo%202.jpg?alt=media&token=ffb35b9c-d967-4c80-8370-697622226d0c'],
         descripcion:'Super Deportivo de Bugatti',
-        popularidad:4
+        popularidad:5
     },
 
     {
