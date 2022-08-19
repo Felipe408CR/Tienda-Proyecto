@@ -1,3 +1,5 @@
+// import {productosBD} from '../helpers/baseDatos.js';
+
 console.log("hola estamos comprando")
 console.log("este"+ JSON.parse(localStorage.getItem('infoProducto')))
 let producto=JSON.parse(localStorage.getItem('infoProducto'))
@@ -23,6 +25,8 @@ console.log(JSON.parse(localStorage.getItem("carrito")))
 
 let foto=document.getElementById("foto")
 foto.src=producto.foto
+// foto.classList.add("img-fluid","w-100","h-100")
+// foto.src=producto.fotos[1]
 
 let nombre=document.getElementById("nombre")
 nombre.textContent=producto.nombre

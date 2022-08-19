@@ -1,5 +1,6 @@
-export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,precioProducto,banderaCantidad,cantidadProducto,BanderasubTotal){
+export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,precioProducto,banderaCantidad,cantidadProducto){
 
+    console.log(fotoURL)
     let contenedor=document.getElementById("contenedor")
 
     // Crear una referencia para almacenar el contenedor
@@ -31,13 +32,18 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
     let precio=document.createElement("h3")
     precio.classList.add("fw-bold")
     precio.textContent="Precio Und: " + precioProducto
-    console.log(precioProducto.split('$')[1])
+    console.log(precioProducto)
+
+
     let cantidad=document.createElement("h3")
     cantidad.textContent= "Cantidad: " + cantidadProducto
     
     let subtotal =document.createElement('h2')
     subtotal.classList.add("fw-bold")
-    subtotal.textContent= 'SubTotal: ' + Number(precioProducto.split('€')[0])*cantidadProducto + '€'
+    if(banderaPrecio){
+        subtotal.textContent= 'SubTotal: ' + Number(precioProducto.split('€')[0])*cantidadProducto + '€'
+    }
+    
     
      // Padres e hijos
 
@@ -53,10 +59,9 @@ export function pintarResumenCompra(fotoURL,nombreMensaje,banderaBoton,banderaPr
 
     if(banderaCantidad==true){
         columna2.appendChild(cantidad)
+        columna2.appendChild(subtotal)
     }
 
-    if(BanderasubTotal=!NaN)
-    columna2.appendChild(subtotal)
 
     fila.appendChild(columna1)
     fila.appendChild(columna2)
